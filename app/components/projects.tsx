@@ -325,25 +325,24 @@ export default function Projects() {
                 </div>
               </h2>
 
-             <div ref={aboutContentRef} className="grid lg:grid-cols-2 gap-16">
-  <div className="space-y-6">
-    {sentences.map((sentence, index) => (
-      <p key={index} className="text-xl text-[#3B3B3B] text-justify font-satoshi">
-        {sentence}{index < sentences.length - 1 ? '.' : ''}
-      </p>
-    ))}
-  </div>
-  <div className="space-y-8">
-    <h3 className="text-3xl font-black text-[#3B3B3B] font-satoshi">HIGHLIGHTS</h3>
-    {profile.highlights.map((highlight, index) => (
-      <div key={index} className="flex gap-4">
-        <span className="text-emerald-700 text-3xl">→</span>
-        <span className="text-lg text-[#3B3B3B] font-satoshi">{highlight}</span>
-      </div>
-    ))}
-  </div>
-</div>
-
+              <div ref={aboutContentRef} className="grid lg:grid-cols-2 gap-16">
+                <div className="space-y-6">
+                  {sentences.map((sentence, index) => (
+                    <p key={index} className="text-xl text-gray-700 text-justify">
+                      {sentence}{index < sentences.length - 1 ? '.' : ''}
+                    </p>
+                  ))}
+                </div>
+                <div className="space-y-8">
+                  <h3 className="text-3xl font-black">HIGHLIGHTS</h3>
+                  {profile.highlights.map((highlight, index) => (
+                    <div key={index} className="flex gap-4">
+                      <span className="text-emerald-700 text-3xl">→</span>
+                      <span className="text-lg">{highlight}</span>
+                    </div>
+                  ))}
+                </div>
+              </div>
             </div>
           </div>
         </div>
