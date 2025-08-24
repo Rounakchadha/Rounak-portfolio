@@ -1,0 +1,196 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  /* Global Resets */
+  * {
+    cursor: none !important;
+    box-sizing: border-box;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  body {
+    @apply bg-white text-black;
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+    cursor: none !important;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+
+  /* Selection Style */
+  ::selection {
+    @apply bg-emerald-700 text-white;
+  }
+
+  /* Scroll Behavior - IMPORTANT: Use 'auto' with ScrollTrigger */
+  html {
+    scroll-behavior: auto;
+  }
+
+  /* Hide Scrollbars */
+  ::-webkit-scrollbar {
+    display: none;
+  }
+}
+
+/* Section Base Styles */
+section {
+  border: none;
+  margin: 0;
+}
+
+/* Projects Section Specific */
+#projects {
+  border: none;
+  margin-bottom: 0;
+  padding-bottom: 0;
+  will-change: transform;
+  -webkit-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+#projects * {
+  -webkit-transform: translateZ(0);
+  -webkit-backface-visibility: hidden;
+  -webkit-perspective: 1000;
+}
+
+#projects [style*="transform"] {
+  transform-origin: center center;
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+}
+
+/* 3D Card Styles */
+.project-card {
+  transform-style: preserve-3d;
+  backface-visibility: hidden;
+}
+
+.project-visual {
+  transform-style: preserve-3d;
+  perspective: 1000px;
+}
+
+.project-text {
+  will-change: transform, opacity;
+}
+
+@supports (transform-style: preserve-3d) {
+  .flip-card {
+    transform-style: preserve-3d;
+  }
+}
+
+/* About Section Specific */
+#about {
+  border-top: none;
+  margin-top: 0;
+  position: relative;
+  z-index: 10;
+  transform: translateZ(0);
+  will-change: transform;
+}
+
+/* Mask Effect Styles for About Section */
+.word-mask {
+  overflow: hidden;
+  display: inline-block;
+  vertical-align: bottom;
+  line-height: 0.9;
+}
+
+.word-1, .word-2, .word-3, .word-4 {
+  display: inline-block;
+  transform: translateY(100%);
+  will-change: transform;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+/* Text Utilities */
+.text-justified {
+  text-align: justify;
+  text-justify: inter-word;
+}
+
+/* Generic Overflow Hidden */
+.overflow-hidden {
+  overflow: hidden;
+  position: relative;
+}
+
+/* Legacy mask classes (if you still need them) */
+.masked-word {
+  display: inline-block;
+  transform: translateY(110%);
+  will-change: transform;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+.word-wrapper {
+  display: inline-block;
+  overflow: hidden;
+  vertical-align: bottom;
+  line-height: 1;
+}
+
+/* Hide default scrollbar */
+.hide-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.hide-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+/* Smooth scroll */
+.scroll-smooth {
+  scroll-behavior: smooth;
+}
+
+/* Skills Section - ONLY what's needed */
+[class*="skill-card"] {
+  /* Remove any browser default transforms */
+  transform-origin: center center;
+}
+/* Anti-blur fix for skill cards */
+[class*="skill-card"] {
+  -webkit-font-smoothing: antialiased !important;
+  -moz-osx-font-smoothing: grayscale !important;
+  text-rendering: optimizeLegibility !important;
+  image-rendering: -webkit-optimize-contrast !important;
+}
+/* Force pixel-perfect rendering for skill cards */
+[class*="skill-card"] {
+  image-rendering: pixelated !important;
+  -webkit-font-smoothing: subpixel-antialiased !important;
+  font-smooth: never !important;
+  text-rendering: geometricPrecision !important;
+  will-change: transform !important;
+  backface-visibility: hidden !important;
+  -webkit-backface-visibility: hidden !important;
+  transform-style: flat !important;
+  contain: layout style paint !important;
+}
+
+/* Disable motion blur on transforms */
+[class*="skill-card"] * {
+  will-change: auto !important;
+}
+@import url('https://api.fontshare.com/v2/css?f[]=satoshi@900,700,500,400&display=swap');
+
+.font-satoshi {
+  font-family: 'Satoshi', sans-serif;
+}
+

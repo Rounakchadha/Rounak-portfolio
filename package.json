@@ -1,0 +1,42 @@
+{
+  "name": "personal-portfolio",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "@gsap/react": "^2.1.0",
+    "@react-three/drei": "^9.88.11",
+    "@react-three/fiber": "^8.15.11",
+    "@studio-freight/lenis": "^1.0.29",
+    "@types/node": "20.10.0",
+    "@types/react": "18.2.39",
+    "@types/react-dom": "18.2.17",
+    "@types/three": "^0.158.3",
+    "framer-motion": "^10.16.5",
+    "gsap": "^3.12.2",
+    "lenis": "^1.0.29",
+    "matter-js": "^0.19.0",
+    "next": "14.0.3",
+    "react": "18.2.0",
+    "react-dom": "18.2.0",
+    "react-hook-form": "^7.48.2",
+    "react-intersection-observer": "^9.5.3",
+    "react-use-measure": "^2.1.1",
+    "split-type": "^0.3.4",
+    "three": "^0.159.0",
+    "typescript": "5.3.2"
+  },
+  "devDependencies": {
+    "@types/gtag.js": "^0.0.18",
+    "autoprefixer": "^10.4.21",
+    "eslint": "8.54.0",
+    "eslint-config-next": "14.0.3",
+    "postcss": "^8.5.6",
+    "tailwindcss": "^3.4.17"
+  }
+}
