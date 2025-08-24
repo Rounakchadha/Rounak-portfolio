@@ -1,12 +1,12 @@
 'use client'
 
-import Hero from './components/Hero'
-import Projects from './components/Projects'
-import Experience from './components/Experience'
-import Skills from './components/Skills'
-import Contact from './components/Contact'
+import Hero from './components/hero'
+import Projects from './components/projects'
+import Experience from './components/experience'
+import Skills from './components/skills'
+import Contact from './components/contact'
 import CustomCursor from './components/CustomCursor'
-import SmoothScroll from './components/SmoothScroll'
+import SmoothScroll from './components/smoothScroll'
 
 export default function Home() {
   return (
